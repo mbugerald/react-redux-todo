@@ -1,0 +1,153 @@
+div#addTaskContainer
+  display: flex
+  width: 100%
+  .addTasksPart
+    box-sizing: border-box
+    text-align: justify
+    justify-content: space-between
+    flex-basis: 48.27%
+    h4#titleCreateTodo
+      width: 40%
+      margin: auto
+      text-align: center
+      padding: 1rem
+      font-size: 23px
+    &:nth-child(2)
+      max-height: 600px
+      overflow-y: scroll
+      padding: 12px
+      border: none!important
+    .classContainer
+      padding: 0
+      li h3
+        button
+          border: none
+          padding: 0.17rem 0.52rem
+        .editBtn
+          background-color: #0000ff
+          color: #ffffff
+        .delBtn
+          background-color: #ff0000
+          color: #ffffff
+    form#addTask
+      max-width: 500px
+      margin: auto
+      display: flex
+      flex: 1
+      flex-basis: 40%
+      border: none
+      fieldset
+        flex: 1
+        display: flex
+        flex-direction: column
+        margin-top: 1rem
+        border: none!important
+      label
+        margin-bottom: 8px!important
+      input
+        flex: 1
+        padding: 0.52rem
+        margin-bottom: 12px
+        border: none
+        border-bottom: 2px solid #90ee90
+        width: 100%
+        &[type="submit"]
+          background-color: #90ee90
+          color: #000000
+          border: none!important
+          padding: 0.8rem
+          max-width: 100px
+          margin: 0 0 0 auto
+          cursor: pointer
+          float: right
+          &:hover
+            box-shadow: 1px 1px 3px 0 #514d4d
+          &:active
+            -webkit-transform: translateY(2px)
+              -moz-transform: translateY(2px)
+              -ms-transform: translateY(2px)
+              transform: translateY(2px)
+      p
+        width: 100%
+      select
+        flex: 1
+        padding: 0.45rem
+        margin-bottom: 12px
+        max-width: 130px
+        border: none
+        border-bottom: 2px solid #90ee90
+        -webkit-appearance: none
+        -moz-appearance: none
+        -ms-appearance: none
+@media screen and (max-width: 920px)
+  div#addTaskContainer
+    flex-direction: column!important
+
+
+form.updateForm
+  width: 89.62%
+  margin: auto
+  display: flex
+  flex-direction: column
+  border: none
+  box-sizing: border-box
+  animation: AnimateUpdateInForm .5s ease-in-out
+  fieldset
+    flex: 1
+    display: flex
+    flex-direction: column
+    margin-top: 3rem
+    border: none!important
+  label
+    margin-bottom: 8px!important
+  input
+    flex: 1
+    padding: 0.52rem
+    margin-bottom: 12px
+    border: none
+    border-bottom: 2px solid #90ee90
+    width: 100%
+  select
+    flex: 1
+    padding: 0.45rem
+    margin-bottom: 12px
+    max-width: 130px
+    border: none
+    border-bottom: 2px solid #90ee90
+    -webkit-appearance: none
+    -moz-appearance: none
+    -ms-appearance: none
+  .updateTaskBtns
+    flex: 30%
+    padding: 0.42rem
+    margin: auto
+    button
+      margin-right: 0.4rem
+      &:last-child
+        margin-right: 0!important
+  @keyframes AnimateUpdateInForm
+    from
+      opacity: 0
+      transform: scale(0) rotateY(360deg)
+    to
+      opacity: 1
+      transform: scale(1) rotateY(0deg)
+
+
+textarea
+  width: 100%
+  height: 110px
+  border: 1px solid #d3d3d3
+  padding: 1rem
+
+.updateExistingTaskContainer
+  h4.titleUpdateTodo
+    width: 40%
+    margin: auto
+    text-align: center
+    padding: 1rem
+    font-size: 23px
+
+.spinner
+  position: absolute
+  height: 200px

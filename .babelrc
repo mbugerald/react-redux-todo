@@ -1,0 +1,5 @@
+{
+  "presets": ["es2015", "react", "react-hmre", "stage-2"],
+  "plugins": ["react-html-attrs", "transform-class-properties", "transform-decorators-legacy"],
+  "comments": false
+}
